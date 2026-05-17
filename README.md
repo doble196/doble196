@@ -9,7 +9,7 @@
 Building [GitHat](https://www.githat.io): a fleet of apps sharing one identity layer, one payments rail, one deploy story.
 
 [![Website](https://img.shields.io/badge/githat.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://www.githat.io)
-[![X](https://img.shields.io/badge/<!-- IDENTITY:x -->[@VyperPilledDev](https://x.com/VyperPilledDev)<!-- /IDENTITY:x -->-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
+[![X](https://img.shields.io/badge/@VyperPilledDev-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
 [![Location](https://img.shields.io/badge/New_York-000?style=for-the-badge&logo=googlemaps&logoColor=white)]()
 
 </div>
@@ -18,11 +18,22 @@ Building [GitHat](https://www.githat.io): a fleet of apps sharing one identity l
 
 ## The fleet
 
-<div align="center">
-  <img src="./fleet.svg" alt="The GitHat fleet — GitHat identity layer, Sebastn payments rail, and the apps on top" width="760">
-</div>
+```mermaid
+flowchart LR
+    GitHat["🎩 GitHat<br/>identity"] -->|auth| Sebastn["💳 Sebastn<br/>payments"]
+    GitHat -->|auth| ClickReserv["📅 ClickReserv<br/>bookings"]
+    GitHat -->|auth| Quantl["📊 Quantl<br/>analytics"]
+    GitHat -->|auth| Colmado["🛒 Colmado<br/>commerce"]
+    Sebastn -->|payments| ClickReserv
+    Sebastn -->|payments| Quantl
 
-**GitHat** is the identity layer — every app signs in through it, so there's no per-app auth to build. **Sebastn** is the payments rail; ClickReserv and Quantl run charges through it, and businesses onboard once as connected accounts. Add a new app to the fleet and auth + payments are already solved.
+    classDef root fill:#0a0a0a,stroke:#fff,color:#fff
+    classDef app fill:#1a1a1a,stroke:#888,color:#fff
+    class GitHat root
+    class Sebastn,ClickReserv,Quantl,Colmado app
+```
+
+Single edge pattern across every app. Certs auto-rotate. No third-party CAs.
 
 ## What I'm building
 
@@ -52,12 +63,8 @@ Building [GitHat](https://www.githat.io): a fleet of apps sharing one identity l
 
 </div>
 
-
 <!-- DYNAMIC:START -->
-> 🌱 Spring sprint — building in bloom.
->
-> 📅 **1,774 days on GitHub** · 4 years, 314 days · 253 weeks
-> _Last updated: 2026-05-17 (America/New_York)_
+> _Initializing…_
 <!-- DYNAMIC:END -->
 
 ---
