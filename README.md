@@ -1,13 +1,19 @@
 <div align="center">
 
-# <!-- IDENTITY:name -->Rensley R.<!-- /IDENTITY:name -->
+# <!-- IDENTITY:name -->
+Rensley R.
+<!-- /IDENTITY:name -->
 
-**Founder, builder, platform engineer — <!-- IDENTITY:location -->New York, NY<!-- /IDENTITY:location -->**
+**Founder, builder, platform engineer — <!-- IDENTITY:location -->
+New York, NY
+<!-- /IDENTITY:location -->**
 
 Building [GitHat](https://www.githat.io): a fleet of apps sharing one identity layer, one payments rail, one deploy story.
 
 [![Website](https://img.shields.io/badge/githat.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://www.githat.io)
-[![X](https://img.shields.io/badge/<!-- IDENTITY:x -->@VyperPilledDev<!-- /IDENTITY:x -->-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
+[![X](https://img.shields.io/badge/<!-- IDENTITY:x -->
+[@VyperPilledDev](https://x.com/VyperPilledDev)
+<!-- /IDENTITY:x -->-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
 [![Location](https://img.shields.io/badge/New_York-000?style=for-the-badge&logo=googlemaps&logoColor=white)]()
 
 </div>
