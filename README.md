@@ -8,6 +8,8 @@ Rensley R.
 New York, NY
 <!-- /IDENTITY:location -->**
 
+🛠️ <!-- IDENTITY:status -->shipping the GitHat fleet<!-- /IDENTITY:status -->
+
 Building [GitHat](https://www.githat.io): a fleet of apps sharing one identity layer, one payments rail, one deploy story.
 
 [![Website](https://img.shields.io/badge/githat.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://www.githat.io)
