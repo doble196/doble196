@@ -38,10 +38,10 @@ Every app: **Route 53 → CloudFront → EC2 (Caddy → Node)** with auto-rotati
 | App | Domain | What it does |
 |---|---|---|
 | **GitHat** | [githat.io](https://githat.io) | RS256/KMS identity provider for the fleet |
-| **Sebastn** | sebastn.com | Stripe Connect payments-as-a-service |
+| **Sebastn** | [sebastn.com](https://sebastn.com) | Stripe Connect payments-as-a-service |
 | **ClickReserv** | [reserv.click](https://reserv.click) | Multi-tenant booking SaaS (26 templates) |
-| **Quantl** | quantl.click | Quant signals + forecasting |
-| **Colmado** | colmado.click | Commerce |
+| **Quantl** | [quantl.click](https://quantl.click) | Quant signals + forecasting |
+| **Colmado** | [colmado.click](https://colmado.click) | Commerce |
 
 ## Stack I ship with
 
