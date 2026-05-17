@@ -1,16 +1,53 @@
-# Single source of truth for fleet identity / contact info.
-# Repos pull this and re-render their README's <!-- IDENTITY:* --> blocks.
-# Edit here; all consumer READMEs update on the next cron / push.
+# =============================================================================
+# IDENTITY — single source of truth for fleet identity / contact info
+# =============================================================================
+#
+# Edit this file, push, and every consumer README re-renders within 24h
+# (or instantly with: gh workflow run sync-identity.yml --repo <repo>).
+#
+# In a README, anything between matching markers gets replaced:
+#   <!-- IDENTITY:<key> -->
+#   ...auto-generated...
+#   <!-- /IDENTITY:<key> -->
+#
+# -----------------------------------------------------------------------------
+# AVAILABLE KEYS
+# -----------------------------------------------------------------------------
+#
+# Linkified (custom-formatted markdown links):
+#   email          →  [rensley@githat.io](mailto:rensley@githat.io)
+#   x              →  [@VyperPilledDev](https://x.com/VyperPilledDev)
+#   linkedin       →  [linkedin.com/in/<slug>](https://linkedin.com/in/<slug>)   (empty if linkedin_path unset)
+#   github         →  [@doble196](https://github.com/doble196)
+#   website        →  [githat.io](https://githat.io)
+#
+# Composite blocks (multi-line):
+#   contact        →  email + X + linkedin (if set) + github + location, as a bullet list
+#   fleet_table    →  | App | Domain | Role |  markdown table from `fleet:` below
+#   fleet_links    →  bullet list of fleet apps with links
+#
+# Any other top-level scalar (string / number / boolean) auto-renders as-is.
+# So if you add `phone: 555-1234`, then <!-- IDENTITY:phone --> outputs `555-1234`.
+#
+# Structured fields (lists / maps) need a custom renderer in sync-identity.py.
+#
+# =============================================================================
 
+# --- Personal scalars ---
 name: Rensley R.
 location: New York, NY
+status: shipping the GitHat fleet
 email: rensley@githat.io
-x_handle: VyperPilledDev
-github_user: doble196
-website: githat.io
-templates_count: 56
+x_handle: VyperPilledDev          # used by `x` renderer
+github_user: doble196              # used by `github` renderer
+website: githat.io                 # used by `website` renderer
+# linkedin_path: rensley-2-nfty    # uncomment to re-enable `linkedin` + LinkedIn row in `contact`
 joined_github: 2021-07-07T23:47:52Z
 
+# --- ClickReserv stat (used in org READMEs) ---
+templates_count: 56
+
+# --- Fleet apps (drives `fleet_table` and `fleet_links`) ---
 fleet:
   - name: GitHat
     domain: githat.io
