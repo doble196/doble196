@@ -16,22 +16,11 @@ Building [GitHat](https://www.githat.io): a fleet of apps sharing one identity l
 
 ## The fleet
 
-```mermaid
-flowchart LR
-    GitHat["🎩 GitHat<br/>identity"] -->|auth| Sebastn["💳 Sebastn<br/>payments"]
-    GitHat -->|auth| ClickReserv["📅 ClickReserv<br/>bookings"]
-    GitHat -->|auth| Quantl["📊 Quantl<br/>analytics"]
-    GitHat -->|auth| Colmado["🛒 Colmado<br/>commerce"]
-    Sebastn -->|payments| ClickReserv
-    Sebastn -->|payments| Quantl
+<div align="center">
+  <img src="./fleet.svg" alt="The GitHat fleet — GitHat identity layer, Sebastn payments rail, and the apps on top" width="760">
+</div>
 
-    classDef root fill:#0a0a0a,stroke:#fff,color:#fff
-    classDef app fill:#1a1a1a,stroke:#888,color:#fff
-    class GitHat root
-    class Sebastn,ClickReserv,Quantl,Colmado app
-```
-
-Single edge pattern across every app. Certs auto-rotate. No third-party CAs.
+**GitHat** is the identity layer — every app signs in through it, so there's no per-app auth to build. **Sebastn** is the payments rail; ClickReserv and Quantl run charges through it, and businesses onboard once as connected accounts. Add a new app to the fleet and auth + payments are already solved.
 
 ## What I'm building
 
