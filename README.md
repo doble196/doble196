@@ -7,7 +7,7 @@
 Building the [GitHat](https://www.githat.io) platform: a fleet of AWS-native apps sharing one identity provider, one payments rail, and one deploy pattern.
 
 [![Website](https://img.shields.io/badge/githat.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://www.githat.io)
-[![X](https://img.shields.io/badge/@Rensley__Ramos-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
+[![X](https://img.shields.io/badge/@VyperPilledDev-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
 [![Location](https://img.shields.io/badge/New_York-000?style=for-the-badge&logo=googlemaps&logoColor=white)]()
 
 </div>
