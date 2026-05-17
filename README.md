@@ -71,8 +71,7 @@ Every app: **Route 53 → CloudFront → EC2 (Caddy → Node)** with auto-rotati
 
 <div align="center">
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=doble196&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=doble196&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000)
+![Metrics](./metrics.svg)
 
 </div>
 
