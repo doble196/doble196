@@ -1,0 +1,35 @@
+# Single source of truth for fleet identity / contact info.
+# Repos pull this and re-render their README's <!-- IDENTITY:* --> blocks.
+# Edit here; all consumer READMEs update on the next cron / push.
+
+name: Rensley R.
+location: New York, NY
+email: rensley@githat.io
+linkedin_path: rensley-2-nfty
+x_handle: VyperPilledDev
+github_user: doble196
+website: githat.io
+templates_count: 56
+joined_github: 2021-07-07T23:47:52Z
+
+fleet:
+  - name: GitHat
+    domain: githat.io
+    role: Identity layer for the fleet
+    github_org: GitHat-IO
+  - name: Sebastn
+    domain: sebastn.com
+    role: Payments rail
+    github_org: SebasTN-Rhys
+  - name: ClickReserv
+    domain: reserv.click
+    role: Multi-tenant booking SaaS
+    github_org: ClickReserv
+  - name: Quantl
+    domain: quantl.click
+    role: Quant signals + forecasting
+    github_org: QuantLinc
+  - name: Colmado
+    domain: colmado.click
+    role: Neighborhood commerce
+    github_org: Colmado-Inc
