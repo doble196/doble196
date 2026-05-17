@@ -26,6 +26,4 @@ jobs:
           plugin_topics: no
           plugin_followup: yes
           plugin_followup_sections: repositories
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
           filename: metrics.svg
