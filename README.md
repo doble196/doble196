@@ -59,6 +59,11 @@ Single edge pattern across every app. Certs auto-rotate. No third-party CAs.
 
 </div>
 
+
+<!-- DYNAMIC:START -->
+> _Initializing…_
+<!-- DYNAMIC:END -->
+
 ---
 
 <div align="center">
