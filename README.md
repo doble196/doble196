@@ -2,9 +2,9 @@
 
 # Rensley R.
 
-**Founder, builder, and platform engineer — New York, NY**
+**Founder, builder, platform engineer — New York, NY**
 
-Building the [GitHat](https://www.githat.io) platform: a fleet of AWS-native apps sharing one identity provider, one payments rail, and one deploy pattern.
+Building [GitHat](https://www.githat.io): a fleet of apps sharing one identity layer, one payments rail, one deploy story.
 
 [![Website](https://img.shields.io/badge/githat.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://www.githat.io)
 [![X](https://img.shields.io/badge/@VyperPilledDev-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
@@ -22,8 +22,8 @@ flowchart LR
     GitHat -->|auth| ClickReserv["📅 ClickReserv<br/>bookings"]
     GitHat -->|auth| Quantl["📊 Quantl<br/>analytics"]
     GitHat -->|auth| Colmado["🛒 Colmado<br/>commerce"]
-    Sebastn -->|Stripe Connect| ClickReserv
-    Sebastn -->|Stripe Connect| Quantl
+    Sebastn -->|payments| ClickReserv
+    Sebastn -->|payments| Quantl
 
     classDef root fill:#0a0a0a,stroke:#fff,color:#fff
     classDef app fill:#1a1a1a,stroke:#888,color:#fff
@@ -31,41 +31,25 @@ flowchart LR
     class Sebastn,ClickReserv,Quantl,Colmado app
 ```
 
-Every app: **Route 53 → CloudFront → EC2 (Caddy → Node)** with auto-rotating ACM certs and CAA lockdown. No third-party CAs, no third-party CDNs.
+Single edge pattern across every app. Certs auto-rotate. No third-party CAs.
 
 ## What I'm building
 
 | App | Domain | What it does |
 |---|---|---|
-| **GitHat** | [githat.io](https://githat.io) | RS256/KMS identity provider for the fleet |
-| **Sebastn** | [sebastn.com](https://sebastn.com) | Stripe Connect payments-as-a-service |
-| **ClickReserv** | [reserv.click](https://reserv.click) | Multi-tenant booking SaaS (26 templates) |
+| **GitHat** | [githat.io](https://githat.io) | Identity layer for the fleet |
+| **Sebastn** | [sebastn.com](https://sebastn.com) | Payments rail |
+| **ClickReserv** | [reserv.click](https://reserv.click) | Multi-tenant booking SaaS |
 | **Quantl** | [quantl.click](https://quantl.click) | Quant signals + forecasting |
 | **Colmado** | [colmado.click](https://colmado.click) | Commerce |
 
-## Stack I ship with
+## How I ship
 
-[![Next.js](https://img.shields.io/badge/Next.js_16-000?logo=nextdotjs)](https://nextjs.org)
-[![React](https://img.shields.io/badge/React_19-000?logo=react)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-000?logo=typescript)](https://www.typescriptlang.org)
-[![Tailwind](https://img.shields.io/badge/Tailwind_4-000?logo=tailwindcss)](https://tailwindcss.com)
-[![Node](https://img.shields.io/badge/Node_20-000?logo=nodedotjs)](https://nodejs.org)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?logo=postgresql)](https://www.postgresql.org)
-[![AWS](https://img.shields.io/badge/AWS-000?logo=amazonaws)](https://aws.amazon.com)
-[![CloudFront](https://img.shields.io/badge/CloudFront-000?logo=amazonaws)](https://aws.amazon.com/cloudfront)
-[![Lambda](https://img.shields.io/badge/Lambda-000?logo=awslambda)](https://aws.amazon.com/lambda)
-[![SES](https://img.shields.io/badge/SES-000?logo=amazonaws)](https://aws.amazon.com/ses)
-[![Stripe](https://img.shields.io/badge/Stripe_Connect-000?logo=stripe)](https://stripe.com/connect)
-[![Solidity](https://img.shields.io/badge/Solidity-000?logo=solidity)](https://soliditylang.org)
-[![Foundry](https://img.shields.io/badge/Foundry-000?logo=foundry)](https://getfoundry.sh)
-
-## Approach
-
-- **AWS-native edge** — Route 53 + CloudFront + ACM, no Cloudflare, no Let's Encrypt
-- **One identity provider** — RS256/JWKS, KMS-backed, no shared secrets between apps
-- **Stripe Connect** — businesses onboard as connected accounts under Sebastn's platform
-- **AI-native developer experience** — every repo ships with `CLAUDE.md` and MCP server hooks where it matters
-- **Standalone Next.js on t2.micro** — sized for unit economics, not vanity
+- **Cloud-native edge** — one pattern, every app, certs auto-rotate
+- **One identity provider** — verified locally, no shared secrets between apps
+- **One payments rail** — businesses onboard as connected accounts
+- **AI-native dev loop** — every repo ships with agent metadata
+- **Sized for unit economics** — not vanity
 
 ## Stats
 
@@ -78,5 +62,5 @@ Every app: **Route 53 → CloudFront → EC2 (Caddy → Node)** with auto-rotati
 ---
 
 <div align="center">
-<sub>Currently shipping <a href="https://reserv.click">ClickReserv</a> · find me at <a href="https://www.githat.io">githat.io</a></sub>
+<sub>Currently shipping <a href="https://reserv.click">ClickReserv</a> · <a href="https://www.githat.io">githat.io</a></sub>
 </div>
