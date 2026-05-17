@@ -45,19 +45,19 @@ Every app: **Route 53 → CloudFront → EC2 (Caddy → Node)** with auto-rotati
 
 ## Stack I ship with
 
-![Next.js](https://img.shields.io/badge/Next.js_16-000?logo=nextdotjs)
-![React](https://img.shields.io/badge/React_19-000?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-000?logo=typescript)
-![Tailwind](https://img.shields.io/badge/Tailwind_4-000?logo=tailwindcss)
-![Node](https://img.shields.io/badge/Node_20-000?logo=nodedotjs)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?logo=postgresql)
-![AWS](https://img.shields.io/badge/AWS-000?logo=amazonaws)
-![CloudFront](https://img.shields.io/badge/CloudFront-000?logo=amazonaws)
-![Lambda](https://img.shields.io/badge/Lambda-000?logo=awslambda)
-![SES](https://img.shields.io/badge/SES-000?logo=amazonaws)
-![Stripe](https://img.shields.io/badge/Stripe_Connect-000?logo=stripe)
-![Solidity](https://img.shields.io/badge/Solidity-000?logo=solidity)
-![Foundry](https://img.shields.io/badge/Foundry-000?logo=foundry)
+[![Next.js](https://img.shields.io/badge/Next.js_16-000?logo=nextdotjs)](https://nextjs.org)
+[![React](https://img.shields.io/badge/React_19-000?logo=react)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-000?logo=typescript)](https://www.typescriptlang.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind_4-000?logo=tailwindcss)](https://tailwindcss.com)
+[![Node](https://img.shields.io/badge/Node_20-000?logo=nodedotjs)](https://nodejs.org)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000?logo=postgresql)](https://www.postgresql.org)
+[![AWS](https://img.shields.io/badge/AWS-000?logo=amazonaws)](https://aws.amazon.com)
+[![CloudFront](https://img.shields.io/badge/CloudFront-000?logo=amazonaws)](https://aws.amazon.com/cloudfront)
+[![Lambda](https://img.shields.io/badge/Lambda-000?logo=awslambda)](https://aws.amazon.com/lambda)
+[![SES](https://img.shields.io/badge/SES-000?logo=amazonaws)](https://aws.amazon.com/ses)
+[![Stripe](https://img.shields.io/badge/Stripe_Connect-000?logo=stripe)](https://stripe.com/connect)
+[![Solidity](https://img.shields.io/badge/Solidity-000?logo=solidity)](https://soliditylang.org)
+[![Foundry](https://img.shields.io/badge/Foundry-000?logo=foundry)](https://getfoundry.sh)
 
 ## Approach
 
