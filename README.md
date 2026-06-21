@@ -64,10 +64,10 @@ Single edge pattern across every app. Certs auto-rotate. No third-party CAs.
 </div>
 
 <!-- DYNAMIC:START -->
-> 🌱 Spring sprint — building in bloom.
+> ☀️ Summer ops — shipping under the sun.
 >
-> 📅 **1,808 days on GitHub** · 4 years, 348 days · 258 weeks
-> _Last updated: 2026-06-20 (America/New_York)_
+> 📅 **1,809 days on GitHub** · 4 years, 349 days · 258 weeks
+> _Last updated: 2026-06-21 (America/New_York)_
 <!-- DYNAMIC:END -->
 
 ---
