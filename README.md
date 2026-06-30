@@ -2,58 +2,47 @@
 
 # <!-- IDENTITY:name -->Rensley R.<!-- /IDENTITY:name -->
 
-**Founder, builder, platform engineer — <!-- IDENTITY:location -->New York, NY<!-- /IDENTITY:location -->**
+**Onchain builder — <!-- IDENTITY:location -->New York, NY<!-- /IDENTITY:location -->**
 
-🛠️ <!-- IDENTITY:status -->shipping the GitHat fleet<!-- /IDENTITY:status -->
+🛠️ <!-- IDENTITY:status -->building Access0x1 — open-source onchain payments<!-- /IDENTITY:status -->
 
-Building [GitHat](https://www.githat.io): a fleet of apps sharing one identity layer, one payments rail, one deploy story.
-
-[![Website](https://img.shields.io/badge/githat.io-000?style=for-the-badge&logo=safari&logoColor=white)](https://www.githat.io)
 [![X](https://img.shields.io/badge/@VyperPilledDev-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
+[![Access0x1](https://img.shields.io/badge/Access0x1-000?style=for-the-badge&logo=ethereum&logoColor=white)](https://github.com/Access0x1/Access0x1)
 [![Location](https://img.shields.io/badge/New_York-000?style=for-the-badge&logo=googlemaps&logoColor=white)]()
 
 </div>
 
 ---
 
-## The fleet
+## 🏆 Verified ETHGlobal Hacker Pack holder
 
-```mermaid
-flowchart LR
-    GitHat["🎩 GitHat<br/>identity"] -->|auth| Sebastn["💳 Sebastn<br/>payments"]
-    GitHat -->|auth| ClickReserv["📅 ClickReserv<br/>bookings"]
-    GitHat -->|auth| Quantl["📊 Quantl<br/>analytics"]
-    GitHat -->|auth| Colmado["🛒 Colmado<br/>commerce"]
-    Sebastn -->|payments| ClickReserv
-    Sebastn -->|payments| Quantl
+Not a claim — an on-chain credential. The `EG-HACKER` token, held on Optimism:
 
-    classDef root fill:#0a0a0a,stroke:#fff,color:#fff
-    classDef app fill:#1a1a1a,stroke:#888,color:#fff
-    class GitHat root
-    class Sebastn,ClickReserv,Quantl,Colmado app
+```js
+// ETHGlobal Hacker Pack — onchain holder check (Optimism)
+const { ethers } = require('ethers'); // npm install ethers
+const provider = new ethers.JsonRpcProvider('https://mainnet.optimism.io');
+
+const pack   = '0x32382a82d9faDc55f971f33DaEeE5841cfbADbE0'; // ETHGlobal Hacker Pack (EG-HACKER)
+const wallet = '0x53c61cfb8128ad59244e8c1d26109252ace23d14';
+const abi    = ['function balanceOf(address owner) view returns (uint256)'];
+
+const held = await new ethers.Contract(pack, abi, provider).balanceOf(wallet);
+console.log(`${wallet} ${held > 0n ? 'is' : 'is not'} a pack holder`); // → is  (balance: 1)
 ```
 
-Single edge pattern across every app. Certs auto-rotate. No third-party CAs.
-
 ## What I'm building
+
+**Access0x1** — an open-source onchain payments + identity rail. USD-priced crypto checkout from a single link: no code, no contract, no gas to manage. One shared, non-custodial router; exact fee-split; prices read from Chainlink feeds in-transaction.
 
 <!-- IDENTITY:fleet_table -->
 | App | Domain | Role |
 |---|---|---|
-| **GitHat** | [githat.io](https://githat.io) | Identity layer for the fleet |
-| **Sebastn** | [sebastn.com](https://sebastn.com) | Payments rail |
-| **ClickReserv** | [reserv.click](https://reserv.click) | Multi-tenant booking SaaS |
-| **Quantl** | [quantl.click](https://quantl.click) | Quant signals + forecasting |
-| **Colmado** | [colmado.click](https://colmado.click) | Neighborhood commerce |
+| **Access0x1** | [github.com/Access0x1/Access0x1](https://github.com/Access0x1/Access0x1) | Open-source onchain payments + identity rail |
+| **NFTeria** | [nfteria.click](https://nfteria.click) | Onchain commerce built on Access0x1 |
 <!-- /IDENTITY:fleet_table -->
 
-## How I ship
-
-- **Cloud-native edge** — one pattern, every app, certs auto-rotate
-- **One identity provider** — verified locally, no shared secrets between apps
-- **One payments rail** — businesses onboard as connected accounts
-- **AI-native dev loop** — every repo ships with agent metadata
-- **Sized for unit economics** — not vanity
+Most recently at **ETHGlobal** — shipped Access0x1 and won a prize from **ENS**.
 
 ## Stats
 
@@ -73,5 +62,5 @@ Single edge pattern across every app. Certs auto-rotate. No third-party CAs.
 ---
 
 <div align="center">
-<sub>Currently shipping <a href="https://reserv.click">ClickReserv</a> · <a href="https://www.githat.io">githat.io</a></sub>
+<sub>Building in the open · <a href="https://github.com/Access0x1/Access0x1">Access0x1</a></sub>
 </div>

@@ -4,7 +4,7 @@ Guidance for AI coding agents working in this repo.
 
 ## Repo role
 
-Part of the [GitHat](https://www.githat.io) fleet. Auth is provided by GitHat. Payments — when present — flow through the fleet's shared payments rail.
+This is the public GitHub profile repo for [doble196](https://github.com/doble196) - it renders the profile README and syncs shared identity. Public-facing: keep it clean (no internal infrastructure, no secrets).
 
 ## House rules
 

@@ -1,6 +1,6 @@
 Soy el Vyper-pilled Dev.
 
-Fundador de GitHat (githat.io) — identidad + edge para apps que no quieren pegar diez proveedores. Una instalación, sin backend que desplegar.
+Fundador de Access0x1 (nfteria.click) — identidad + edge para apps que no quieren pegar diez proveedores. Una instalación, sin backend que desplegar.
 
 También construyendo NFTeria — protocolos on-chain, agentes de IA, SaaS multi-tenant. Desplegado en múltiples cadenas (EVM y más allá). Primer Vyper-pilled dev certificado por Cyfrin Updraft.
 
