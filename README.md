@@ -53,10 +53,10 @@ Most recently at **ETHGlobal** — shipped Access0x1 and won a prize from **ENS*
 </div>
 
 <!-- DYNAMIC:START -->
-> 🎩 5 years on GitHub today — joined 2021-07-07.
+> ☀️ Summer ops — shipping under the sun.
 >
-> 📅 **1,825 days on GitHub** · 5 years, 0 days · 260 weeks
-> _Last updated: 2026-07-07 (America/New_York)_
+> 📅 **1,826 days on GitHub** · 5 years, 1 days · 260 weeks
+> _Last updated: 2026-07-08 (America/New_York)_
 <!-- DYNAMIC:END -->
 
 ---
