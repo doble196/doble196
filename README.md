@@ -14,6 +14,11 @@
 
 ---
 
+> **Read this first.** I'm first a reasoning-and-logic developer — fullstack, leaning
+> backend, which is where fintech lies. If the look isn't there, here are my words:
+> **judge me on the logic and the complexity of the project before you judge the way
+> my button looks.** Everything below is that argument, with receipts.
+
 ## 🏆 Verified ETHGlobal Hacker Pack holder
 
 Not a claim — an on-chain credential. The `EG-HACKER` token, held on Optimism:
