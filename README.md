@@ -60,8 +60,8 @@ Most recently at **ETHGlobal** — shipped Access0x1 and won a prize from **ENS*
 <!-- DYNAMIC:START -->
 > ☀️ Summer ops — shipping under the sun.
 >
-> 📅 **1,860 days on GitHub** · 5 years, 35 days · 265 weeks
-> _Last updated: 2026-08-11 (America/New_York)_
+> 📅 **1,861 days on GitHub** · 5 years, 36 days · 265 weeks
+> _Last updated: 2026-08-12 (America/New_York)_
 <!-- DYNAMIC:END -->
 
 ---
