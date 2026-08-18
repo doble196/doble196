@@ -21,20 +21,7 @@
 
 ## 🏆 Verified ETHGlobal Hacker Pack holder
 
-Not a claim — an on-chain credential. The `EG-HACKER` token, held on Optimism:
-
-```js
-// ETHGlobal Hacker Pack — onchain holder check (Optimism)
-const { ethers } = require('ethers'); // npm install ethers
-const provider = new ethers.JsonRpcProvider('https://mainnet.optimism.io');
-
-const pack   = '0x32382a82d9faDc55f971f33DaEeE5841cfbADbE0'; // ETHGlobal Hacker Pack (EG-HACKER)
-const wallet = '0x53c61cfb8128ad59244e8c1d26109252ace23d14';
-const abi    = ['function balanceOf(address owner) view returns (uint256)'];
-
-const held = await new ethers.Contract(pack, abi, provider).balanceOf(wallet);
-console.log(`${wallet} ${held > 0n ? 'is' : 'is not'} a pack holder`); // → is  (balance: 1)
-```
+The `EG-HACKER` token, held on Optimism:
 
 ## What I'm building
 
