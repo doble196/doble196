@@ -1,0 +1,29 @@
+name: Metrics
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Main metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          user: doble196
+          template: classic
+          base: header, activity, community, repositories, metadata
+          base_indepth: yes
+          base_hireable: no
+          config_timezone: America/New_York
+          plugin_lines: no
+          plugin_languages: no
+          plugin_topics: no
+          plugin_followup: yes
+          plugin_followup_sections: repositories
+          filename: metrics.svg
