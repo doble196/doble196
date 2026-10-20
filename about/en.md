@@ -1,6 +1,6 @@
 I'm the Vyper-pilled Dev.
 
-Building Access0x1 — an open-source onchain payments + identity rail. USD-priced crypto checkout from one link: no code, no contract, no gas to manage. Non-custodial, exact fee-split, prices read from Chainlink in-transaction.
+Building ClickReserv, Colmado and reserv.click on Access0x1, an onchain payments and identity rail. USD-priced crypto checkout from one link: no code, no contract, no gas to manage. Non-custodial, exact fee-split, prices read from Chainlink in-transaction.
 
 Also building NFTeria — onchain commerce on top of Access0x1. On-chain protocols, AI agents, multi-tenant SaaS, deployed across multiple chains (EVM and beyond). First Vyper-pilled dev certified by Cyfrin Updraft. Verified ETHGlobal Hacker Pack holder.
 
