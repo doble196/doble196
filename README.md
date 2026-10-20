@@ -31,7 +31,7 @@ Real products for real businesses, on one shared payments and identity layer.
 - **ClickReserv** — bookings, card and wallet payments, reminders and QR check-in for salons, studios and shops.
 - **Colmado** — an online store, delivery and pickup for neighbourhood shops, paid by card, cash or USDC.
 - **reserv.click** — free short links and QR codes with counts, and nobody tracked.
-- **Access0x1** — the onchain payments rail underneath: USD-priced checkout in USDC, exact fee split, Chainlink prices read in the transaction; live on testnets, owned by a multisig Safe, Base mainnet next.
+- **Access0x1** — the onchain payments rail underneath: USD-priced checkout in USDC, exact fee split, Chainlink prices read in the transaction; live on Base mainnet, owned by a 2-of-3 multisig Safe, with public settlement proof at [access0x1.com/mainnet](https://access0x1.com/mainnet).
 - **ReverseV4Hook** — a Uniswap v4 hook built in the Uniswap Hook Incubator, with its tests in the open.
 
 <!-- IDENTITY:fleet_table -->
