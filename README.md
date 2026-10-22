@@ -8,7 +8,7 @@
 
 [![X](https://img.shields.io/badge/@VyperPilledDev-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
 [![ClickReserv](https://img.shields.io/badge/ClickReserv-000?style=for-the-badge&logo=googlecalendar&logoColor=white)](https://clickreserv.com)
-[![Access0x1](https://img.shields.io/badge/Access0x1-000?style=for-the-badge&logo=ethereum&logoColor=white)](https://access0x1.click)
+[![Access0x1](https://img.shields.io/badge/Access0x1-000?style=for-the-badge&logo=ethereum&logoColor=white)](https://access0x1.com)
 [![Location](https://img.shields.io/badge/New_York-000?style=for-the-badge&logo=googlemaps&logoColor=white)]()
 
 </div>
