@@ -1,70 +1,42 @@
-<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
+  <img alt="Rensley R. — Founder, SebasTN Inc., New York" src="./assets/header-light.svg">
+</picture>
 
-# <!-- IDENTITY:name -->Rensley R.<!-- /IDENTITY:name -->
+I build payment infrastructure for small businesses. Card payments run through each business's own Stripe account. Digital-dollar payments run through Access0x1, a payment router I designed and operate in production: the business is paid in the same transaction, and the router never holds the money.
 
-**Onchain builder — <!-- IDENTITY:location -->New York, NY<!-- /IDENTITY:location -->**
+### SebasTN Inc.
 
-🛠️ <!-- IDENTITY:status -->building ClickReserv, Colmado and the Access0x1 payments rail<!-- /IDENTITY:status -->
+| | What it is |
+|---|---|
+| **[SebasTN](https://sebastn.com)** | The payments company: card and digital dollars, for any business. |
+| **[Access0x1](https://access0x1.com)** | The non-custodial payment router. Live on Base, Ethereum, Unichain and Arc, owned by a 2-of-3 Safe. |
+| **[ClickReserv](https://clickreserv.com)** | Booking and payments for appointment businesses, in 24 languages. |
+| **[reserv.click](https://reserv.click)** | Short links and QR codes. |
 
-[![X](https://img.shields.io/badge/@VyperPilledDev-000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/VyperPilledDev)
-[![ClickReserv](https://img.shields.io/badge/ClickReserv-000?style=for-the-badge&logo=googlecalendar&logoColor=white)](https://clickreserv.com)
-[![Access0x1](https://img.shields.io/badge/Access0x1-000?style=for-the-badge&logo=ethereum&logoColor=white)](https://access0x1.com)
-[![Location](https://img.shields.io/badge/New_York-000?style=for-the-badge&logo=googlemaps&logoColor=white)]()
+### In production
 
-</div>
-
----
-
-> **Read this first.** I'm first a reasoning-and-logic developer — fullstack, leaning
-> backend, which is where fintech lies. If the look isn't there, here are my words:
-> **judge me on the logic and the complexity of the project before you judge the way
-> my button looks.** Everything below is that argument, with receipts.
-
-## 🏆 Verified ETHGlobal Hacker Pack holder
-
-The `EG-HACKER` token, held on Optimism:
-
-## What I'm building
-
-Real products for real businesses, on one shared payments and identity layer.
-
-- **ClickReserv** — bookings, card and wallet payments, reminders and QR check-in for salons, studios and shops.
-- **Colmado** — an online store, delivery and pickup for neighbourhood shops, paid by card, cash or USDC.
-- **reserv.click** — free short links and QR codes with counts, and nobody tracked.
-- **Access0x1** — the onchain payments rail underneath: USD-priced checkout in USDC, exact fee split, Chainlink prices read in the transaction; live on Base mainnet, owned by a 2-of-3 multisig Safe, with public settlement proof at [access0x1.com/mainnet](https://access0x1.com/mainnet).
-- **ReverseV4Hook** — a Uniswap v4 hook built in the Uniswap Hook Incubator, with its tests in the open.
-
-<!-- IDENTITY:fleet_table -->
-| App | Domain | Role |
+| Contract | Networks | Address |
 |---|---|---|
-| **ClickReserv** | [clickreserv.com](https://clickreserv.com) | Booking, payments and a customer list for small businesses |
-| **Colmado** | [colmado.click](https://colmado.click) | Online store and delivery for neighbourhood shops |
-| **reserv.click** | [reserv.click](https://reserv.click) | Free short links and QR codes, no tracking |
-| **SebasTN** | [sebastn.com](https://sebastn.com) | Payments for the apps (card and wallet) |
-| **Access0x1** | [access0x1.click](https://access0x1.click) | Onchain payments rail under the apps |
-| **ReverseV4Hook** | [github.com/Access0x1/uhi11v4hook](https://github.com/Access0x1/uhi11v4hook) | Uniswap v4 hook (Uniswap Hook Incubator) |
-| **NFTeria** | [nfteria.click](https://nfteria.click) | Onchain commerce |
-<!-- /IDENTITY:fleet_table -->
+| Access0x1 router (UUPS proxy) | Base · Ethereum · Unichain · Arc | [`0xe922…5EB5`](https://basescan.org/address/0xe92244e3368561faf21648146511DeDE3a475EB5) |
+| Owner: Safe, 2 of 3 | Base · Ethereum · Unichain · Arc | [`0xF025…9A91`](https://basescan.org/address/0xF025EC0bB828dbFD896c22142a323dD8606F9A91) |
+| PayHook (Uniswap v4) | Base · Unichain · Arc | [`0xFDE0…4044`](https://basescan.org/address/0xFDE0bad6627D99d46c66D64D2f8F692e4a354044) |
+| BoomerangHook (Uniswap v4) | Base · Ethereum · Unichain | [`0x3f69…0503`](https://basescan.org/address/0x3f6911635018bE4e2b8999287504676693290503) |
 
-Most recently at **ETHGlobal** — shipped Access0x1 and won a prize from **ENS**.
+Every payment is on the public record at [access0x1.com/mainnet](https://access0x1.com/mainnet). Live health: [access0x1.com/status](https://access0x1.com/status). Prices are read from Chainlink feeds inside the transaction.
 
-## Stats
+### How the money code is held to account
 
-<div align="center">
+- Unit, fuzz and invariant suites in Foundry on every money path: the fee plus what the business receives always equals what the customer paid, and a refund can never be blocked.
+- Symbolic proofs with Halmos, mutation testing, and static analysis with Slither and Aderyn.
+- Upgrades go only through the Safe, and contract storage is append-only.
 
-![Metrics](./metrics.svg)
+### Open source
 
-</div>
+- **[access0x1-snap](https://github.com/Access0x1/access0x1-snap)**: a MetaMask Snap that shows who you are paying, the fee and what the business receives, before you sign.
+- Uniswap Hook Incubator, cohort 11.
+- Access0x1 won a prize from ENS at ETHGlobal.
 
-<!-- DYNAMIC:START -->
-> 🍂 Autumn cycles — pruning the tech debt.
->
-> 📅 **1,933 days on GitHub** · 5 years, 108 days · 276 weeks
-> _Last updated: 2026-10-23 (America/New_York)_
-<!-- DYNAMIC:END -->
+### Contact
 
----
-
-<div align="center">
-<sub><a href="https://clickreserv.com">clickreserv.com</a> · <a href="https://colmado.click">colmado.click</a> · <a href="https://reserv.click">reserv.click</a></sub>
-</div>
+[sebastn.com](https://sebastn.com) · [Crunchbase](https://www.crunchbase.com/organization/sebastn) · [X](https://x.com/VyperPilledDev) · New York
