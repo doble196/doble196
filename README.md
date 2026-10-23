@@ -41,7 +41,7 @@ Real products for real businesses, on one shared payments and identity layer.
 | **Colmado** | [colmado.click](https://colmado.click) | Online store and delivery for neighbourhood shops |
 | **reserv.click** | [reserv.click](https://reserv.click) | Free short links and QR codes, no tracking |
 | **SebasTN** | [sebastn.com](https://sebastn.com) | Payments for the apps (card and wallet) |
-| **Access0x1** | [access0x1.click](https://access0x1.com) | Onchain payments rail under the apps |
+| **Access0x1** | [access0x1.click](https://access0x1.click) | Onchain payments rail under the apps |
 | **ReverseV4Hook** | [github.com/Access0x1/uhi11v4hook](https://github.com/Access0x1/uhi11v4hook) | Uniswap v4 hook (Uniswap Hook Incubator) |
 | **NFTeria** | [nfteria.click](https://nfteria.click) | Onchain commerce |
 <!-- /IDENTITY:fleet_table -->
