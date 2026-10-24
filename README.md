@@ -1,9 +1,13 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg">
-  <img alt="Rensley R. — Founder, SebasTN Inc., New York" src="./assets/header-light.svg">
+  <img alt="Rensley R. — Founder, SebasTN Inc. AI, data science and blockchain engineer, New York" src="./assets/header-light.svg">
 </picture>
 
-I build payment infrastructure for small businesses. Card payments run through each business's own Stripe account. Digital-dollar payments run through Access0x1, a payment router I designed and operate in production: the business is paid in the same transaction, and the router never holds the money.
+Founder of SebasTN Inc. I am a full-stack engineer who works across three fields: **AI**, **data science** and **blockchain**. I build the whole system myself, from the model to the money:
+
+- **Models that forecast.** Scoring and prediction from live business data: which businesses to approach next and why, what a customer is likely to book, where the fees should step. LLM assistants run inside the apps and are paid per use.
+- **Apps that run businesses.** Production Next.js and TypeScript on AWS, serving real businesses in 24 languages and 41 countries.
+- **Contracts that move the money.** Solidity in production on four chains: a non-custodial payment router and Uniswap v4 hooks, held to proofs, fuzzing and mutation tests.
 
 ### SebasTN Inc.
 
@@ -35,7 +39,6 @@ Every payment is on the public record at [access0x1.com/mainnet](https://access0
 
 - **[access0x1-snap](https://github.com/Access0x1/access0x1-snap)**: a MetaMask Snap that shows who you are paying, the fee and what the business receives, before you sign.
 - Uniswap Hook Incubator, cohort 11.
-- Access0x1 won a prize from ENS at ETHGlobal.
 
 ### Contact
 
