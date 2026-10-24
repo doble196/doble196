@@ -39,6 +39,7 @@ Every payment is on the public record at [access0x1.com/mainnet](https://access0
 
 - **[access0x1-snap](https://github.com/Access0x1/access0x1-snap)**: a MetaMask Snap that shows who you are paying, the fee and what the business receives, before you sign.
 - Uniswap Hook Incubator, cohort 11.
+- Access0x1 won an ENS prize at ETHGlobal.
 
 ### Contact
 
