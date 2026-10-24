@@ -21,7 +21,7 @@ I build payment infrastructure for small businesses. Card payments run through e
 | Access0x1 router (UUPS proxy) | Base · Ethereum · Unichain · Arc | [`0xe922…5EB5`](https://basescan.org/address/0xe92244e3368561faf21648146511DeDE3a475EB5) |
 | Owner: Safe, 2 of 3 | Base · Ethereum · Unichain · Arc | [`0xF025…9A91`](https://basescan.org/address/0xF025EC0bB828dbFD896c22142a323dD8606F9A91) |
 | PayHook (Uniswap v4) | Base · Unichain · Arc | [`0xFDE0…4044`](https://basescan.org/address/0xFDE0bad6627D99d46c66D64D2f8F692e4a354044) |
-| BoomerangHook (Uniswap v4) | Base · Ethereum · Unichain | [`0x3f69…0503`](https://basescan.org/address/0x3f6911635018bE4e2b8999287504676693290503) |
+| BoomerangHook (Uniswap v4): 5% of liquidity-provider fees to the treasury | Base · Ethereum · Unichain · Arc | [`0x3f69…0503`](https://basescan.org/address/0x3f6911635018bE4e2b8999287504676693290503) |
 
 Every payment is on the public record at [access0x1.com/mainnet](https://access0x1.com/mainnet). Live health: [access0x1.com/status](https://access0x1.com/status). Prices are read from Chainlink feeds inside the transaction.
 
